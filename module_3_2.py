@@ -21,7 +21,7 @@ def correct_recipient(recipient):
     return is_correct
 
 
-def send_email(message, recipient, sender="university.help@gmail.com"):
+def send_email(message, recipient, *, sender="university.help@gmail.com"):
     if not correct_sender(sender) or not correct_recipient(recipient):
         print("Невозможно отправить письмо с адреса ", sender, "на адрес ", recipient)
     elif sender == recipient:
