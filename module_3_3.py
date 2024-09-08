@@ -9,5 +9,7 @@ print_params(b=25)  #вызов функции срабатывает, но по
 print_params(c=[1, 2, 3])  #об изменении типа данных
 values_list = [11, 'The string', False]
 values_dict = {'a': 5, 'b': 'some words', 'c': [1, 2, 3]}
+values_list_2 = ['The Sun', False]
 print_params(*values_list)
 print_params(**values_dict)
+print_params(*values_list_2, 42)
